@@ -1,6 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 :root {
     --lightgray: lightgray;
     --black: black;
+}
+
+section.container {
+    display: flex;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right: 0.1rem solid var(--black);
+    width: 10%;
+    min-height: 100vh;
+    margin-right: 3rem;
+}
+
+nav>a {
+    text-align: center;
+    color: var(--black);
+    border: 0.1rem solid var(--black);
+    padding: 1rem;
+    margin-top: 1rem;
+
+}
+
+.current {
+    font-weight: bold;
 }
 
 div.user {

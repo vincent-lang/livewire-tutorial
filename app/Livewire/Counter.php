@@ -2,8 +2,10 @@
 
 namespace App\Livewire;
 
+use Livewire\Attributes\Title;
 use Livewire\Component;
 
+#[Title('counter')]
 class Counter extends Component
 {
     public $count = 0;

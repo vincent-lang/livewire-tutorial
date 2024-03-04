@@ -1,5 +1,8 @@
 <?php
 
+use App\Livewire\Counter;
+use App\Livewire\SearchUsers;
+use App\Livewire\Todo;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,10 +16,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', Todo::class)->name('todo');
 
-Route::get('/livewire/counter', function () {
-    return view('livewire.counter');
-})->name('livewire.counter');
+Route::get('/livewire/counter', Counter::class)->name('counter');
+
+Route::get('/livewire/search', SearchUsers::class)->name('search-filter');

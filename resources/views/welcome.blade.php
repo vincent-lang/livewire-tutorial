@@ -14,10 +14,13 @@
             <h1>Welcome to the playground!!!</h1>
         </section>
         <section>
-            <livewire:counter />
+            <a href="{{route('counter')}}">counter</a>
         </section>
         <section>
-            <livewire:search-users />
+            <a href="{{route('search-filter')}}">search users</a>
+        </section>
+        <section>
+            <a href="{{route('todo')}}">todo list</a>
         </section>
     </main>
 </body>
