@@ -12,6 +12,9 @@
             <li>
                 {{ $user->name }}
             </li>
+            <li>
+                <a href="{{route('user.edit', [$user->id])}}">edit user</a>
+            </li>
         </div>
         @endforeach
     </main>

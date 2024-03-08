@@ -17,7 +17,7 @@ class SearchUsers extends Component
     public function render()
     {
         return view('livewire.search-users', [
-            'users' => DB::table('users')->where('name', 'like', '%' . $this->search . '%')->paginate(7),
+            'users' => DB::table('users')->where('name', 'like', '%' . $this->search . '%')->paginate(6),
         ]);
     }
 }
